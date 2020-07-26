@@ -1,44 +1,53 @@
-/*Base*/
-
+:root {
+	--brown: #844b24;
+	--flesh: #f4c6a6;
+	--peach: #eaaa7f;
+	--orange: #ba8058;
+	--off-white: #fbfeff;
+	--off-black: #2d3339;
+	--off-black-two: #111;
+	--relative: relative;
+	--none: none;
+}
 * {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    /*border: 1px solid #F00;*/
+	box-sizing: border-box;
+	/*border: 1px solid #F00;*/
 }
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 300;
-    color: #111;
-    /*Add ligatures to font style*/
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	color: var(--off-black-two);
+	/*Add ligatures to font style*/
 
-    font-feature-settings: "kern", "liga";
-    -moz-font-feature-settings: "kern", "liga";
-    -moz-font-feature-settings: "kern=1", "liga=1";
-    -ms-font-feature-settings: "kern", "liga";
-    -o-font-feature-settings: "kern", "liga";
-    -webkit-font-feature-settings: "kern", "liga";
+	font-feature-settings: "kern", "liga";
+	-moz-font-feature-settings: "kern", "liga";
+	-moz-font-feature-settings: "kern=1", "liga=1";
+	-ms-font-feature-settings: "kern", "liga";
+	-o-font-feature-settings: "kern", "liga";
+	-webkit-font-feature-settings: "kern", "liga";
 }
 
 p,
 h1 {
-    color: #000000;
+	color: #000000;
 }
 
 p {
-    line-height: 1.61em;
+	line-height: 1.61em;
 }
 
 h1,
 figcaption,
 #Layer_1,
 .footer__p--footerCredit {
-    text-align: center;
+	text-align: center;
 }
 
-h1, span {
-    font-weight: 700;
+h1,
+span {
+	font-weight: 700;
 }
 
 .app__body--background,
@@ -46,107 +55,106 @@ h1, span {
 .main__div--flexContainer,
 .main__div--contentContainer,
 #Layer_1 {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 .app__body--background,
 .nav__ul--container,
 .main__h1--alternativeLogo,
 #Layer_1 {
-    display: block;
+	display: block;
 }
 
 .app__body--background {
-    background-image: url('svgs/backgroundThree.svg');
-    background-color: #edeff0;
-    background-size: 50px 50px;
-    height: 100%;
-    width: 100%;
+	background-image: url('svgs/backgroundThree.svg');
+	background-color: #edeff0;
+	background-size: 50px 50px;
+	height: 100%;
+	width: 100%;
 }
 
 .app__div--container {
-    width: 95%;
-    height: auto;
-    background-color: #ffffff;
-    z-index: 999;
-    padding: 1em;
+	width: 95%;
+	height: auto;
+	background-color: #ffffff;
+	z-index: 999;
+	padding: 1em;
 }
 
 .main__div--flexContainer {
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+	justify-content: center;
 }
 
 .main__div--contentContainer {
-    width: 75%;
-    padding: 3em 0 0 0;
+	width: 75%;
+	padding: 3em 0 0 0;
 }
-
 
 /*Header*/
 
 li {
-    display: inline-block;
-    width: 6em;
-    height: 1em;
-    float: left;
+	display: inline-block;
+	width: 6em;
+	height: 1em;
+	float: left;
 }
 
 span {
-    color: #39add1;
-    margin: 0 0 0 .3em;
-    transition: color .61s ease-out;
+	color: #39add1;
+	margin: 0 0 0 .3em;
+	transition: color .61s ease-out;
 }
 
 span:hover {
-    color: #111;
+	color: var(--off-black-two);
 }
 
 .nav__svg--heart,
 .nav__svg--location,
 .nav__svg--contact {
-    float: left;
-    width: 15px;
-    height: 15px;
-    transition: fill .61s ease-out;
-    fill: #39add1;
+	float: left;
+	width: 15px;
+	height: 15px;
+	transition: fill .61s ease-out;
+	fill: #39add1;
 }
 
 .nav__svg--heart:hover,
 .nav__svg--location:hover,
 .nav__svg--contact:hover {
-    fill: #111;
+	fill: var(--off-black-two);
 }
 
 /*Body*/
 
 figcaption,
 .footer__p--footerCredit {
-    color: #ba8058;
+	color: var(--orange);
 }
 
 footer {
-    margin: 100px 0 0 0;
+	margin: 100px 0 0 0;
 }
 
 .main__h1--alternativeLogo {
-    position: relative;
-    top: 3em;
-    margin: 2em auto;
-    color: #EAAA7F;
+	position: var(--relative);
+	top: 3em;
+	margin: 2em auto;
+	color: var(--peach);
 }
 #Layer_1 {
-    position: relative;
-    top: 3em;
-    height: 120px;
-    width: 140px;
-    clear: both;
+	position: var(--relative);
+	top: 3em;
+	height: 120px;
+	width: 140px;
+	clear: both;
 }
 
 .main__g--logoTitle {
-    display: none;
+	display: var(--none);
 }
 
 .corgiPics,
@@ -154,8 +162,8 @@ footer {
 #fawnCorgi,
 #sableCorgi,
 #blackAndTanCorgi {
-    width: 9em;
-    height: 9em;
+	width: 9em;
+	height: 9em;
 }
 
 .main__path--redCorgiRightEar,
@@ -168,14 +176,14 @@ footer {
 .main__path--blackAndTanCorgiLeftEyebrow,
 .main__path--blackAndTanCorgiRightEyebrow,
 .main__ellipse--innerEllipseLogo {
-    fill: #BA8058;
+	fill: var(--orange);
 }
 
 .main__path--redCorgiJaws,
 .main__path--fawnCorgiJaws,
 .main__path--sableCorgiJaws,
 .main__path--blackAndTanCorgiJaws {
-    fill:#FBFEFF;
+	fill: var(--off-white);
 }
 
 .main__path--redCorgiNose,
@@ -190,7 +198,7 @@ footer {
 .main__path--blackAndTanCorgiNose,
 .main__path--blackAndTanCorgiRightEye,
 .main__path--blackAndTanCorgiLeftEye {
-    fill:#2D3339;
+	fill: var(--off-black);
 }
 
 .main__path--fawnCorgiLeftEar,
@@ -209,7 +217,7 @@ footer {
 .main__path--e,
 .main__path--l,
 .main__path--s {
-    fill:#EAAA7F;
+	fill: var(--peach);
 }
 
 .main__path--fawnCorgiRightEyebrow,
@@ -218,38 +226,37 @@ footer {
 .main__path--rightToePad,
 .main__path--leftToePad,
 .main__path--heelPad {
-    fill:#F4C6A6;
+	fill: var(--flesh);
 }
 
 .main__path--sableCorgiRightEar,
 .main__path--sableCorgiLeftEar,
 .main__path--sableCorgiFace {
-    fill:#844B24;
+	fill: var(--brown);
 }
 
 .main__path--blackAndTanCorgiFace {
-    fill:#52595F;
+	fill: #52595f;
 }
 
 /*Media Queries*/
 
-@media screen and (min-width: 768px){
-    .app__div--container {
-        width: 75%;
-    }
+@media screen and (min-width: 768px) {
+	.app__div--container {
+		width: 75%;
+	}
 
-    .main__div--contentContainer {
-        width: 40%;
-    }
+	.main__div--contentContainer {
+		width: 40%;
+	}
 }
 
 @media screen and (min-width: 420px) {
-    .main__h1--alternativeLogo {
-        display: none;
-    }
+	.main__h1--alternativeLogo {
+		display: var(--none);
+	}
 
-    .main__g--logoTitle {
-        display: block;
-    }
+	.main__g--logoTitle {
+		display: block;
+	}
 }
-
